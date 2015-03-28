@@ -31,8 +31,12 @@ gem 'spring',        group: :development
 group :test do
   gem "rspec-rails", "~> 2.14"
   gem "factory_girl_rails"
+end
+
+group :development, :test do
   gem 'ffaker'
 end
+
 
 gem "devise"
 

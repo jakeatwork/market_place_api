@@ -8,6 +8,7 @@ describe Product do
   it { should respond_to(:price) }
   it { should respond_to(:published) }
   it { should respond_to(:user_id) }
+  it { should belong_to :user }
 
   # it { should not_be_published }
 

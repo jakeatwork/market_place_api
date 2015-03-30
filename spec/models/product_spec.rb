@@ -10,6 +10,9 @@ describe Product do
   it { should respond_to(:user_id) }
   it { should belong_to :user }
 
+  it { should have_many(:placements) }
+  it { should have_many(:orders).through(:placements) }
+
   # it { should not_be_published }
 
   it { should validate_presence_of :title }

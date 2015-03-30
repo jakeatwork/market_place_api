@@ -32,12 +32,12 @@ end
 
 group :test do
   gem "rspec-rails", "~> 2.14"
-  gem "factory_girl_rails"
   gem "shoulda-matchers"
 end
 
 group :development, :test do
   gem 'ffaker'
+  gem "factory_girl_rails"
 end
 
 gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
